@@ -164,7 +164,7 @@ build do
   if version.satisfies?("< 3.1")
     patch source: "ruby-fast-load_26.patch", plevel: 1, env: patch_env
   else
-    patch source: "ruby-fast-load_31.patch", plevel: 1, env: patch_env
+    # patch source: "ruby-fast-load_31.patch", plevel: 1, env: patch_env
   end
 
   # this removes a checks for windows nano in the win32-ole files.
